@@ -1,10 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LayoutComponent } from './layout/layout.component';
+import { PokemonComponent } from './pokemon.component';
+
+
 
 @NgModule({
-  declarations: [LayoutComponent],
-  imports: [CommonModule],
-  exports: [LayoutComponent],
+  declarations: [
+    PokemonComponent
+  ],
+  imports: [
+    CommonModule
+  ],
+  exports: [
+    PokemonComponent
+  ]
 })
-export class PokemonModule {}
+export class PokemonModule { }

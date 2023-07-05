@@ -1,23 +1,25 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { GlobalServiceService } from '../services/global-service.service';
 
 @Component({
   selector: 'app-counter',
   templateUrl: './counter.component.html',
   styleUrls: ['./counter.component.css'],
 })
-export class CounterComponent {
-  public counter: number = 10;
+export class CounterComponent implements OnInit {
 
-  increaseOne() {
-    this.counter = this.counter + 1;
+  constructor(
+    public _globalService: GlobalServiceService
+  ){
+
   }
-  decreaseOne() {
-    this.counter = this.counter - 1;
+
+  ngOnInit(){
+    this._globalService.nombre = 'Juan';
   }
-  increaseBy(value: number) {
-    this.counter = this.counter + value;
-  }
-  decreaseBy(value: number) {
-    this.counter = this.counter - value;
-  }
+
+
+  // imprimirNombre(){
+  //   this._globalService.nombre
+  // }
 }

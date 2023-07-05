@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CounterComponent } from './counter.component';
+import { PokemonComponent } from './pokemon.component';
 
-describe('CounterComponent', () => {
-  let component: CounterComponent;
-  let fixture: ComponentFixture<CounterComponent>;
+describe('PokemonComponent', () => {
+  let component: PokemonComponent;
+  let fixture: ComponentFixture<PokemonComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CounterComponent]
+      declarations: [PokemonComponent]
     });
-    fixture = TestBed.createComponent(CounterComponent);
+    fixture = TestBed.createComponent(PokemonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
