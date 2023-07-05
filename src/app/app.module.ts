@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CounterModule } from './counter/counter.module';
 import { PokemonModule } from './pokemon/pokemon.module';
 import { HttpClientModule } from '@angular/common/http';
+import { FormulariosModule } from './formularios/formularios.module';
 
 
 
@@ -15,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     CounterModule,
     PokemonModule,
+    FormulariosModule,
     HttpClientModule
   ],
   providers: [],
