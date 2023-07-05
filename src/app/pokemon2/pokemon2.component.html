@@ -1,0 +1,17 @@
+<h1 class="titulo">Pokemones</h1>
+<div class="card2">
+  <div *ngFor="let pokemon2 of pokemons3?.results; let i = index" class="cards">
+    <mat-card class="example-card card">
+      <img
+        mat-card-image
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{
+          i + 1
+        }}.png"
+        alt="Photo of a Shiba Inu"
+      />
+      <mat-card-content>
+        <p class="nombre">nombre :{{ pokemon2.name }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

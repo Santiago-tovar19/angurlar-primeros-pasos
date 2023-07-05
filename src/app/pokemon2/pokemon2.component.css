@@ -1,0 +1,42 @@
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 40px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.card2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.card {
+  background-color: gray;
+  display: flex;
+  width: 200px;
+  border-radius: 8px;
+}
+
+.nombre {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+}
